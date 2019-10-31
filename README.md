@@ -12,7 +12,7 @@
 
 ### Deploying
 
-* Navigate to [http://localhost:4200/menu]
+* Navigate to `http://localhost:4200/menu`
 
 
 #### Author
