@@ -1,0 +1,46 @@
+body {
+	text-align: center;
+}
+
+.order-manager {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: left;
+}
+
+.selected_day {
+	font-size: 26px;
+	color: red;
+}
+
+.day_title {
+	text-decoration: underline;
+}
+
+.day_title:hover {
+	cursor: pointer;
+	color: grey;
+}
+
+.menu-item {
+	font-size: 20px;
+	color: blue;
+}
+
+.delete_item:hover {
+	cursor: pointer;
+	color: purple;
+}
+
+.delete_item {
+	color: red;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	width: 70%;
+}

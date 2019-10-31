@@ -1,0 +1,36 @@
+<div class="order-manager">
+	<div>
+		<h3>
+			Select food for <span class="selected_day">{{orderManager.selectedDay}}</span>
+		</h3>
+	</div>
+	{{#each-in orderManager.menuSelection as |day menuOrder|}}
+
+	<div {{action 'setDay' day}}>
+			<h3 class="day_title">{{day}}</h3>
+		<dl>
+			<dt>Breakfast</dt>
+			<dd style="font-weight: bold">
+				{{#if menuOrder.breakfast}}
+					{{menuOrder.breakfast}} <span class="delete_item"  {{action 'remove' day 'breakfast'}}>&#10007;</span>
+				{{/if}}
+			</dd>
+			<dt>Lunch</dt>
+			<dd style="font-weight: bold">
+				{{#if menuOrder.lunch}}
+					{{menuOrder.lunch}} <span class="delete_item"  {{action 'remove' day 'lunch'}}>&#10007;</span>
+				{{/if}}
+			</dd>
+			<dt>Dinner</dt>
+			<dd style="font-weight: bold">
+				{{#if menuOrder.dinner}}
+					{{menuOrder.dinner}} <span class="delete_item" {{action 'remove' day 'dinner'}}>&#10007;</span>
+				{{/if}}
+			</dd>
+		</dl>
+	</div>
+
+	{{/each-in}}
+</div>
+
+{{yield}}
