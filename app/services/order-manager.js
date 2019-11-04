@@ -9,7 +9,7 @@ export default Service.extend({
 		Thursday: {},
 		Friday: {}
 	},
-	
+	// Manipulation methods for day, time and meal
 	setSelectedDay(day) {
 		this.set('selectedDay', day);
 	},
